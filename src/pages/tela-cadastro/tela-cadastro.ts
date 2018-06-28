@@ -1,3 +1,4 @@
+import { TelaCadastroClientePage } from './../tela-cadastro-cliente/tela-cadastro-cliente';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -20,6 +21,10 @@ export class TelaCadastroPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TelaCadastroPage');
+  }
+
+  proxpag(){
+    this.navCtrl.push(TelaCadastroClientePage);
   }
 
 }
