@@ -1,0 +1,66 @@
+/* 
+    MY MARKET STYLES
+
+    Seguinte a definição de css funcionará da seguinte forma
+    Vamos separar classes e id
+    Irei colocar a baixo um separador
+    Cada separador estará indicando classes e id
+    Uma outra separação é pra cor e texto, para ficar padronizado
+
+
+    OBS: Vamos sempre documentar o que estamos colocando
+    pra ficar fácil do outro enxergar
+*/
+
+/*-
+--------------------Classes------------------------*/
+
+
+
+//tamanho imagem mymarket
+.imagem_logo{
+    background: url("../../assets/imgs/MM_Logo.png") no-repeat;
+    
+    height: 250px;
+    width: auto;
+    margin-top: 58px;
+}
+
+//Frase mymarket
+.mm_caixa_frase{
+    //border: solid 1px red;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+
+
+
+/*---------------------ID------------------------*/
+#botao_entrar{
+    width: 150px;
+}
+
+/*---------------------Fontes/Cores------------------------*/
+.Fonte_padrao{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #294ca0;
+}
+
+h2 , h6{
+  font-weight: bold;
+
+}
+h6{
+    color:black;
+}
+
+
+// Cor de fundo
+.background{
+    //background-color: #294ca0;
+    background-color: #ffffff;
+}
+
