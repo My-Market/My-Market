@@ -1,3 +1,25 @@
-page-tela-cadastro-cliente {
 
+h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.caixa_bairro{
+    display: inline-block;
+    width: 220px;
+}
+
+.caixa_cpf{
+    float: right;
+    width: 113px;
+}
+
+.caixa_grande{
+    word-wrap: hard;
+}
+
+.botao_cadastrar{
+    position: relative;
+    top: 20px;
+    float: right;
 }

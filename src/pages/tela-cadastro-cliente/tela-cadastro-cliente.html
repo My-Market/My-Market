@@ -1,19 +1,62 @@
 
+<ion-header>
+  <ion-navbar>
+      <h2>INSIRA SEUS DADOS PESSOAIS </h2>
+  </ion-navbar>
+</ion-header>
 
 
-<ion-content padding>
-    <ion-list>
-
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label floating>Password</ion-label>
+<ion-content >
+<form #Variavel>
+  <ion-list>
+      <ion-item>
+        <ion-label floating>Informe seu nome</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Digite seu CPF</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label floating>Senha</ion-label>
           <ion-input type="password"></ion-input>
-        </ion-item>
-      
-      </ion-list>
+      </ion-item>
 
+      <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email"></ion-input>
+      </ion-item>
+
+  <div>
+          <ion-item >
+              <ion-label floating>Endereço</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item>
+          
+      <div>
+          <div class="caixa_bairro" >
+              <ion-item>
+                  <ion-label floating>Bairro</ion-label>
+                  <ion-input type="text"></ion-input>
+              </ion-item>
+          </div>
+              <div class="caixa_cpf">
+                  <ion-item>
+                      <ion-label floating>Número</ion-label>
+                      <ion-input type="text"></ion-input>
+                  </ion-item>
+              </div>
+      </div>
+  </div>
+  <ion-item>
+      <ion-label floating>Complemento</ion-label>
+      <ion-textarea>Complemento</ion-textarea>
+  </ion-item>
+
+  <button class="botao_cadastrar" ion-button block>Cadastrar</button>
+    </ion-list>
+  </form>  
 </ion-content>
+
