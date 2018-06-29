@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TelaCadastroPage } from '../tela-cadastro/tela-cadastro';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the TelaInicioPage page.
@@ -25,6 +26,9 @@ export class TelaInicioPage {
 
   botaoEntrar(){
     this.navCtrl.push(TelaCadastroPage);
+  }
+  botaologin(){
+    this.navCtrl.push(LoginPage);
   }
 
 }
