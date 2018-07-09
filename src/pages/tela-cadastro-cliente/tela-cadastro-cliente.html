@@ -7,45 +7,49 @@
 
 
 <ion-content >
-<form #Variavel>
+<form [formGroup]="clienteForm" (ngSubmit)="submitMethod()">
+  <div>
+
+  </div>
+
   <ion-list>
       <ion-item>
         <ion-label floating>Informe seu nome</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input formControlName="nome" type="text"></ion-input>
       </ion-item>
-    
+
       <ion-item>
         <ion-label floating>Digite seu CPF</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input formControlName="cpf" type="text"></ion-input>
       </ion-item>
-    
+
       <ion-item>
           <ion-label floating>Senha</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input formControlName="senha" type="password"></ion-input>
       </ion-item>
 
       <ion-item>
           <ion-label floating>Email</ion-label>
-          <ion-input type="email"></ion-input>
+          <ion-input formControlName="email" type="email"></ion-input>
       </ion-item>
 
   <div>
           <ion-item >
               <ion-label floating>Endereço</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input formControlName="endereco" type="text"></ion-input>
           </ion-item>
-          
+
       <div>
           <div class="caixa_bairro" >
               <ion-item>
                   <ion-label floating>Bairro</ion-label>
-                  <ion-input type="text"></ion-input>
+                  <ion-input formControlName="bairro" type="text"></ion-input>
               </ion-item>
           </div>
               <div class="caixa_numero">
                   <ion-item>
                       <ion-label floating>Número</ion-label>
-                      <ion-input type="text"></ion-input>
+                      <ion-input formControlName="numero" type="text"></ion-input>
                   </ion-item>
               </div>
       </div>
@@ -55,8 +59,8 @@
       <ion-textarea>Complemento</ion-textarea>
   </ion-item>
 
-  <button class="botao_cadastrar" ion-button block>Cadastrar</button>
+  <button type="submit" class="botao_cadastrar" ion-button block>Cadastrar</button>
     </ion-list>
-  </form>  
+  </form>
 </ion-content>
 
