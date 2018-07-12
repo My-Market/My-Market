@@ -1,3 +1,29 @@
-page-tela-cadastro-proprietario {
+#titleheader{
+    position: center;
+};
 
+
+h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.caixa_bairro{
+    display: inline-block;
+    width: 200px;
+}
+
+.caixa_numero{
+    float: right;
+    width: 150px;
+}
+
+.caixa_grande{
+    word-wrap: hard;
+}
+
+.botao_cadastrar{
+    position: relative;
+    top: 20px;
+    float: right;
 }

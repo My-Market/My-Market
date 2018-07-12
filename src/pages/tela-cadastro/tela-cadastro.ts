@@ -1,6 +1,7 @@
 import { TelaCadastroClientePage } from './../tela-cadastro-cliente/tela-cadastro-cliente';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TelaCadastroProprietarioPage } from '../tela-cadastro-proprietario/tela-cadastro-proprietario';
 
 /**
  * Generated class for the TelaCadastroPage page.
@@ -27,4 +28,7 @@ export class TelaCadastroPage {
     this.navCtrl.push(TelaCadastroClientePage);
   }
 
+  proxforn(){
+    this.navCtrl.push(TelaCadastroProprietarioPage);
+  }
 }

@@ -14,6 +14,7 @@ import { ClienteServiceProvider } from '../providers/cliente-service/cliente-ser
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AutenticacaoProvider } from '../providers/autenticacao/autenticacao';
 import {  AngularFireAuthModule } from 'angularfire2/auth';
+import { TelaCadastroProprietarioPageModule } from '../pages/tela-cadastro-proprietario/tela-cadastro-proprietario.module';
 
 /* Constante apiKey (chave) que nos da acesso a mexer no banco firebase que está criado
 O parametro messagingSenderId é para controle de mensagens, não pretendo mexer nele agora
@@ -41,7 +42,8 @@ const firebaseAppConfig: FirebaseAppConfig = {
     AngularFireAuthModule,
     IonicModule.forRoot(MyApp),
     TelaCadastroPageModule,
-    AngularFireModule.initializeApp(firebaseAppConfig)
+    AngularFireModule.initializeApp(firebaseAppConfig),
+    TelaCadastroProprietarioPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
