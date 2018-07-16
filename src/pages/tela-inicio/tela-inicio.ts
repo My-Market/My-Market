@@ -14,7 +14,7 @@ import { LoginPage } from '../login/login';
 @Component({
   selector: 'page-tela-inicio',
   templateUrl: 'tela-inicio.html',
-  
+
 })
 export class TelaInicioPage {
 

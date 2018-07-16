@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { AngularFireAuth } from "angularfire2/auth";
 import { Injectable } from '@angular/core';
 import { BaseService } from "../base.services";
@@ -15,17 +16,19 @@ export class AutenticacaoProvider extends BaseService {
   }
 
   //metodo que autentica e verifica se o id do usuario coincide com id do email chamado uid
-  criarAutenticacaoCliente(cliente: {email:string, senha:string}): Promise<firebase.User>{
-    return this.autentica.auth.createUserWithEmailAndPassword(cliente.email , cliente.senha)
+  criarAutenticacaoCliente(user: {email:string, senha:string}): Promise<firebase.User>{
+    return this.autentica.auth.createUserWithEmailAndPassword(user.email , user.senha)
     .catch(this.handlePromiseError);
   }
 
-  entrarComEmail(cliente: {email:string, senha:string}): Promise<boolean>{
-    return this.autentica.auth.signInWithEmailAndPassword(cliente.email, cliente.senha)
+  entrarComEmail(user: {email:string, senha:string}): Promise<boolean>{
+    return this.autentica.auth.signInWithEmailAndPassword(user.email, user.senha)
     .then((aut: firebase.auth.UserCredential) =>{
-      return aut.user != null;
+      return aut.user != null
     }).catch(this.handlePromiseError);
   }
+
+
 
 
 

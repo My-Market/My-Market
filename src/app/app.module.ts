@@ -1,3 +1,4 @@
+import { TelaPrincipalClientePage } from './../pages/tela-principal-cliente/tela-principal-cliente';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -16,6 +17,7 @@ import { AutenticacaoProvider } from '../providers/autenticacao/autenticacao';
 import {  AngularFireAuthModule } from 'angularfire2/auth';
 import { TelaCadastroProprietarioPageModule } from '../pages/tela-cadastro-proprietario/tela-cadastro-proprietario.module';
 import { HomePageModule } from '../pages/home/home.module';
+import { TelaPrincipalProprietarioPage } from '../pages/tela-principal-proprietario/tela-principal-proprietario';
 
 /* Constante apiKey (chave) que nos da acesso a mexer no banco firebase que está criado
 O parametro messagingSenderId é para controle de mensagens, não pretendo mexer nele agora
@@ -34,7 +36,9 @@ const firebaseAppConfig: FirebaseAppConfig = {
     MyApp,
     TelaInicioPage,
     TelaCadastroClientePage,
-    LoginPage
+    LoginPage,
+    TelaPrincipalClientePage,
+    TelaPrincipalProprietarioPage
 
   ],
   imports: [
@@ -52,7 +56,9 @@ const firebaseAppConfig: FirebaseAppConfig = {
     MyApp,
     TelaInicioPage,
     TelaCadastroClientePage,
-    LoginPage
+    LoginPage,
+    TelaPrincipalClientePage,
+    TelaPrincipalProprietarioPage
   ],
   providers: [
     StatusBar,

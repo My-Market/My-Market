@@ -56,9 +56,9 @@ export class TelaCadastroProprietarioPage {
       delete formCliente.senha;
       let uuid: string = autentica['user']['uid'];
 
-      this.clienteService.criarCliente(formCliente, uuid)
+      this.clienteService.criarProprietario(formCliente, uuid)
         .then(() => {
-          console.log('Cliente cadastrado');
+          console.log('Proprietário cadastrado cadastrado');
           this.navCtrl.setRoot(LoginPage);
           loading.dismiss();
           this.alertShow();
@@ -89,5 +89,5 @@ export class TelaCadastroProprietarioPage {
       }).present();
     }
 
-  
+
 }
