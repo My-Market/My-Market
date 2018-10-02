@@ -63,7 +63,27 @@ export class ClienteServiceProvider extends BaseService {
       );
   }
 
+  retorno(){
+    return firebase.database().ref('/Clientes').once('value', (snapshot) => {
+      snapshot.val();
+      snapshot.exists;
+    });
+  
+  }
+
 
   }
+
+  export const snapshotToArray = snapshot => {
+    let returnArr = [];
+
+    snapshot.forEach(childSnapshot => {
+        let item = childSnapshot.val();
+        item.key = childSnapshot.key;
+        returnArr.push(item);
+    });
+
+    return returnArr;
+};
 
 
